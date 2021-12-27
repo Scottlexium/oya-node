@@ -3,10 +3,13 @@ const ProgressBar = require('progress')
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 const Blog = require('./models/blog');
+const dotenv = require("dotenv");
 
 const app = express();
 app.set('view engine', 'ejs');
 app.set('views', 'view');
+
+dotenv.config();
 
 const port = process.env.PORT || 4000;
 
