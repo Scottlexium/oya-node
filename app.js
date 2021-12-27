@@ -7,7 +7,8 @@ const Blog = require('./models/blog');
 const app = express();
 app.set('view engine', 'ejs');
 app.set('views', 'view');
-const port = process.env.port || 4000;
+cons
+const port = process.env.PORT || 4000;
 
 const dbURI = 'mongodb+srv://Scottlexium:Lawrentus@node-tuts.vjfwz.mongodb.net/node-db?retryWrites=true&w=majority';
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
