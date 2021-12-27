@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Node js | <%= title %> </title>
+    <%- include ('./partials/nav.ejs')%>
+</head>
+
+<body>
+    
+    <h1>Blog contents</h1>
+    <div class="blog-items">
+        
+        <div class="items">
+            
+                <% if(blogs.length > 0) {%>
+                    <% blogs.forEach(blog => { %>
+                        <a href="/blogs/<%= blog.id %>" class="posts">
+                        <h3><%= blog.title %> </h3>
+                        <p class="snipper-p"><%= blog.snippet %></p>
+                        </a>
+                    <% }) %>
+                <% }else { %>
+                    <p>There are no blogs to display</p>
+                <% } %>
+            
+        </div>
+    </div>
+</body>
+</html>

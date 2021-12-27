@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/styles.css">
+    <%- include ('./partials/nav.ejs')%>
+</head>
+<body>
+    <div class="form-container">
+        <form action="/blogs" method="POST">
+
+            <div class="input">
+                <label for="">Blog title:</label>
+                <input type="text" placeholder="" name="title">
+            </div>
+
+            <div class="input">
+                <label for="">Snippet:</label>
+                <input type="text" placeholder="" name="snippet">
+                
+            </div>
+            
+            <div class="input">
+                <label for="">Blog Body:</label>
+                <textarea class="post-text" type="text" placeholder="" name="body"></textarea>
+            </div>
+
+            <div class="btn">
+                <button type="submit">Create Post</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

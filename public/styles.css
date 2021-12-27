@@ -1,0 +1,109 @@
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    color: rgb(0, 41, 153);
+    font-weight: bolder;
+    font-size: 36px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+nav a:hover{
+    color: darkblue;
+}
+
+
+
+/* form */
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    line-height: 2;
+    gap: 20px;
+}
+input{
+    height: 50px;
+    outline: none;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    outline: none;
+}
+
+form textarea{
+    outline: none;
+    resize: none;
+}
+.post-text{
+    height: 200px;
+}
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form button{
+    width: 200px;
+    padding: 12px 14px;
+    background-color: rgb(9, 101, 117);
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.items{
+    padding: 20px;
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.items h3{
+    font-size: 20px;
+}
+.items .snipper-p{
+    font-size: 18px;
+}
+.posts{
+    width: 200px;
+    max-width: 50%;
+    background-color: white;
+    box-shadow: 0px 0px 40px 8px rgba(0,0,0,0.194);
+    padding: 20px;
+    height: 200px;
+    margin-top: 20px;
+}
+.items .body-p{
+    font-size: 14px;
+}
+.blog-items{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
