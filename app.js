@@ -13,7 +13,7 @@ dotenv.config();
 
 const port = process.env.PORT || 4000;
 
-const dbURI = 'mongodb+srv://Scottlexium:Lawrentus@node-tuts.vjfwz.mongodb.net/node-db?retryWrites=true&w=majority';
+const dbURI = 'mongodb+srv://Scottlexium:<password>@node-tuts.vjfwz.mongodb.net/node-db?retryWrites=true&w=majority';
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then((result) => {
         app.listen(port);
